@@ -27,9 +27,7 @@ public class FeedbackView extends AppCompatActivity {
     private int stringIndex = 0;
     private String[] row = {"1", "2", "3","4"};
     private TextView textView;
-    final CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkBox1);
-    final CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkBox2);
-    final CheckBox checkBox3= (CheckBox) findViewById(R.id.checkBox3);
+
 
 
     @Override
@@ -37,6 +35,10 @@ public class FeedbackView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         final Intent intent = new Intent(this, StatusView.class);
+
+        final CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkBox1);
+        final CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkBox2);
+        final CheckBox checkBox3= (CheckBox) findViewById(R.id.checkBox3);
 
         textSwitcher = findViewById(R.id.textswit);
         nextButton = findViewById(R.id.button);
