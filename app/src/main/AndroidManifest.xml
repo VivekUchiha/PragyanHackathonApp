@@ -16,6 +16,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Register.RegisterView"></activity>
         <activity android:name=".Login.LoginView" />
+        <activity android:name=".OrderView.OrderView"></activity>
+        <activity android:name=".Status.StatusView" />
+        <activity android:name=".Feedback.FeedbackView" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
