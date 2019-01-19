@@ -2,11 +2,15 @@
     <string name="app_name">PragyanHackathonApp</string>
     <string name="user_id">User ID</string>
     <string name="enter_user_id">Enter User ID</string>
-    <string name="password">Password</string>
     <string name="enter_password">Enter Password</string>
     <string name="login">LOGIN</string>
     <string name="url">http://192.168.43.199:3000</string>
     <string name="loginPath">/login</string>
     <string name="pref_key">hack</string>
     <string name="register">REGISTER</string>
+    <string name="user_registration">User Registration</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="shopId_refer_smartCard">ShopId (Refer SmartCard)</string>
+    <string name="password">Password</string>
 </resources>

@@ -33,7 +33,7 @@ public class LoginModel{
 
     void tryLogin(final String userId, final String password) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.43.199:3000/api/login",
+                "http://192.168.43.199:3000/api/user/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
