@@ -17,6 +17,12 @@ public class RegisterView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_view);
+        EditText username = findViewById(R.id.username);
+        EditText email = findViewById(R.id.email);
+        EditText password = findViewById(R.id.password);
+        EditText phoneno = findViewById(R.id.phonno);
+        EditText uid = findViewById(R.id.uid);
+        EditText shopid = findViewById(R.id.shopid);
 
         final RegisterPresenter presenter = new RegisterPresenter(this);
 

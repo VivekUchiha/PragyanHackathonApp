@@ -19,10 +19,10 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="20sp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
         android:maxLines="1"
         android:inputType="text"
         android:hint="@string/username"
@@ -33,11 +33,11 @@
         android:id="@+id/email"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:maxLines="1"
-        android:inputType="textEmailAddress"
-        android:textSize="20sp"
-        android:hint="@string/email"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Email"
         android:layout_marginHorizontal="10dp"
 
         />
@@ -45,8 +45,8 @@
         android:id="@+id/password"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:textSize="20sp"
-        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_height="40dp"
         android:maxLines="1"
         android:inputType="textWebPassword"
         android:hint="@string/password"
@@ -57,11 +57,22 @@
         android:id="@+id/uid"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="20sp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
         android:maxLines="1"
         android:inputType="text"
-        android:hint="@string/user_id"
+        android:hint="User Id"
+        android:layout_marginHorizontal="10dp"/>
+
+    <EditText
+        android:id="@+id/phonno"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:inputType="number"
+        android:hint="Phone Number"
         android:layout_marginHorizontal="10dp"
 
         />
@@ -71,9 +82,9 @@
         android:layout_width="match_parent"
         android:maxLines="1"
         android:inputType="text"
-        android:layout_height="50dp"
-        android:textSize="20sp"
-        android:hint="@string/shopId_refer_smartCard"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:hint="Shopid (Refer Smartcard)"
         android:layout_marginHorizontal="10dp"
 
         />
@@ -81,7 +92,7 @@
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_marginTop="50dp"
         android:text="@string/register"
         android:layout_gravity="center_horizontal"/>
