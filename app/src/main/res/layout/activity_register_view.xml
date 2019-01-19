@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
     tools:context=".Register.RegisterView">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:text="User Registration"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint="Username"
+        android:layout_marginHorizontal="10dp"
+
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:hint="Email"
+        android:layout_marginHorizontal="10dp"
+
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint="Password"
+        android:layout_marginHorizontal="10dp"
+
+        />
+    <EditText
+        android:id="@+id/uid"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint="User Id"
+        android:layout_marginHorizontal="10dp"
+
+        />
+    <EditText
+        android:id="@+id/shopid"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:hint="Shopid (Refer Smartcard)"
+        android:layout_marginHorizontal="10dp"
+
+        />
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
