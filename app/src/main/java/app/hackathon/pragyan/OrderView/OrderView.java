@@ -16,12 +16,16 @@ public class OrderView extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+
+        final OrderPresenter orderPresenter = new OrderPresenter(this);
+
         final TextView t1 = (TextView)findViewById(R.id.item1);
         final TextView t2 = (TextView)findViewById(R.id.item2);
         final TextView t3 = (TextView)findViewById(R.id.item3);
         final TextView t4 = (TextView)findViewById(R.id.item4);
 
         Button order = (Button)findViewById(R.id.order);
+
 
         Button bp1 = (Button)findViewById(R.id.item1plus);
         Button bp2 = (Button)findViewById(R.id.item2plus);
@@ -105,7 +109,7 @@ public class OrderView extends AppCompatActivity {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //todo send order to server
+                orderPresenter.saveOrder(i1 , i2 , i3 , i4);
             }
         });
 
