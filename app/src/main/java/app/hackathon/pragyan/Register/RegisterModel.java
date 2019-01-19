@@ -30,7 +30,7 @@ public class RegisterModel {
         queue = Volley.newRequestQueue(context);
     }
 
-    public void tryRegister(final String userName, final String email, final String password, final String uId, final String shopId) {
+    public void tryRegister(final String userName, final String email, final String password, final String uId, final String shopId,final String num) {
         StringRequest request = new StringRequest(Request.Method.POST,
                 "http://192.168.43.199:3000/api/user/register",
                 new Response.Listener<String>() {
@@ -62,7 +62,7 @@ public class RegisterModel {
                 params.put("password",password);
                 params.put("user_id",uId);
                 params.put("shop_id",shopId);
-                params.put("contact_number",String.valueOf(9876));
+                params.put("contact_number",num);
                 return params;
             }
         };

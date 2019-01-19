@@ -13,8 +13,8 @@ public class RegisterPresenter implements RegisterModel.Trigger {
         registerModel = new RegisterModel(context , this);
     }
 
-    void sendCreateReq(String userName, String email, String password, String uId, String shopId){
-        registerModel.tryRegister(userName , email , password , uId , shopId);
+    void sendCreateReq(String userName, String email, String password, String uId, String shopId, String num){
+        registerModel.tryRegister(userName , email , password , uId , shopId , num);
     }
 
     @Override
