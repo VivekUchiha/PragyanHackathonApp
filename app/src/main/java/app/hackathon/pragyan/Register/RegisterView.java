@@ -24,14 +24,20 @@ public class RegisterView extends AppCompatActivity {
         EditText uid = findViewById(R.id.uid);
         EditText shopid = findViewById(R.id.shopid);
 
-        Button register = findViewById(R.id.registerbutton);
+        final RegisterPresenter presenter = new RegisterPresenter(this);
+
+        final EditText username = findViewById(R.id.username);
+        final EditText email = findViewById(R.id.email);
+        final EditText password = findViewById(R.id.password);
+        final EditText uid = findViewById(R.id.uid);
+        final EditText shopid = findViewById(R.id.shopid);
+
+        Button register = findViewById(R.id.registerButton);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //todo register in server
-                //todo check if uid unique and toast if not
-
+                presenter.sendCreateReq(username.getText().toString() , email.getText().toString() , password.getText().toString() , uid.getText().toString() , shopid.getText().toString());
             }
         });
 
