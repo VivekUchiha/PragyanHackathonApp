@@ -25,7 +25,7 @@ public class FeedbackView extends AppCompatActivity {
     private TextSwitcher textSwitcher;
     private Button nextButton;
     private int stringIndex = 0;
-    private String[] row = {"1", "2", "3"};
+    private String[] row = {"1", "2", "3","4"};
     private TextView textView;
     final CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkBox1);
     final CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkBox2);

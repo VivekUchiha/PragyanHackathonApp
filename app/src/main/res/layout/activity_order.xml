@@ -1,29 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
     tools:context=".OrderView.OrderView">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="234dp"
-        android:layout_marginEnd="174dp"
-        android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="175dp"
-        android:layout_marginTop="320dp"
-        android:text="TextView" />
-</RelativeLayout>
+        android:text="Cart" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+
+        android:layout_height="40dp">
+
+
+
+        <Button
+            android:id="@+id/item1minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+           android:layout_marginRight="20dp"
+            android:text="-" />
+        <TextView
+            android:id="@+id/item1x"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="item1 : " />
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="0" />
+        <TextView
+            android:id="@+id/item1y"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text=" KG" />
+
+        <Button
+            android:id="@+id/item1plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="+" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/item2minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginRight="20dp"
+            android:text="-" />
+        <TextView
+            android:id="@+id/item2x"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="item1 : " />
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="0" />
+        <TextView
+            android:id="@+id/item2y"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text=" KG" />
+
+        <Button
+            android:id="@+id/item2plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="+" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/item3minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginRight="20dp"
+            android:text="-" />
+        <TextView
+            android:id="@+id/item3x"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="item1 : " />
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="0" />
+        <TextView
+            android:id="@+id/item3y"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text=" KG" />
+
+        <Button
+            android:id="@+id/item3plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="+" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/item4minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginRight="20dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/item4x"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="item1 : " />
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text="0" />
+        <TextView
+            android:id="@+id/item4y"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:text=" KG" />
+
+        <Button
+            android:id="@+id/item4plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="+" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="Order" />
+
+
+</LinearLayout>
