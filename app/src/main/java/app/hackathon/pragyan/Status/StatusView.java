@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 public class StatusView extends AppCompatActivity {
 
-    final ListView listView = (ListView)findViewById(R.id.listvie);
+
 
     Intent intent = new Intent(this, OrderView.class);//todo change class name
     @Override
@@ -22,6 +22,7 @@ public class StatusView extends AppCompatActivity {
         setContentView(R.layout.activity_status_view);
 
         Button orderbutton = (Button)findViewById(R.id.button2);
+        final ListView listView = (ListView)findViewById(R.id.listvie);
 
 
         orderbutton.setOnClickListener(new View.OnClickListener() {
