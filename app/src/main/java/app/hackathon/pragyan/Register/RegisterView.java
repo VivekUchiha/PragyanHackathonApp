@@ -20,6 +20,7 @@ public class RegisterView extends AppCompatActivity {
         EditText username = findViewById(R.id.username);
         EditText email = findViewById(R.id.email);
         EditText password = findViewById(R.id.password);
+        EditText phoneno = findViewById(R.id.phonno);
         EditText uid = findViewById(R.id.uid);
         EditText shopid = findViewById(R.id.shopid);
 
