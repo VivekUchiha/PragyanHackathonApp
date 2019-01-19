@@ -12,17 +12,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.pranavpandey.android.dynamic.toasts.DynamicToast;
-import com.pranavpandey.android.dynamic.utils.DynamicAnimUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import app.hackathon.pragyan.R;
-
-import static android.content.Context.MODE_PRIVATE;
 
 public class LoginModel{
     Context context;

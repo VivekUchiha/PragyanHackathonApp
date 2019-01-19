@@ -3,11 +3,8 @@ package app.hackathon.pragyan.Login;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.pranavpandey.android.dynamic.toasts.DynamicToast;
-
-import app.hackathon.pragyan.MainActivity;
+import app.hackathon.pragyan.Status.StatusView;
 
 public class LoginPresenter implements LoginModel.Model {
     Context context;
@@ -27,16 +24,11 @@ public class LoginPresenter implements LoginModel.Model {
         }
     }
 
-
-    void progressBar() {
-
-    }
-
     @Override
     public void loginSuccess() {
         Log.e("Hit","hit");
         loginModel.toastPrinter(context, "Login Successful" ,0);
-        context.startActivity(new Intent(context , MainActivity.class));
+        context.startActivity(new Intent(context , StatusView.class));
     }
 
 

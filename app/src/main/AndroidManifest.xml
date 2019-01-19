@@ -14,9 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register.RegisterView"></activity>
+        <activity android:name=".Slot.SlotView"></activity>
+        <activity android:name=".Register.RegisterView" />
         <activity android:name=".Login.LoginView" />
-        <activity android:name=".OrderView.OrderView"></activity>
+        <activity android:name=".OrderView.OrderView" />
         <activity android:name=".Status.StatusView" />
         <activity android:name=".Feedback.FeedbackView" />
         <activity android:name=".MainActivity">
