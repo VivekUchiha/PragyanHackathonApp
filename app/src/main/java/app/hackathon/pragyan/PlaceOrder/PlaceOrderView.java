@@ -1,10 +1,10 @@
 package app.hackathon.pragyan.PlaceOrder;
 
-import androidx.appcompat.app.AppCompatActivity;
-import app.hackathon.pragyan.R;
-
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import app.hackathon.pragyan.R;
 
 public class PlaceOrderView extends AppCompatActivity implements PlaceOrderModel.Trigger {
     TextView status;
@@ -13,10 +13,11 @@ public class PlaceOrderView extends AppCompatActivity implements PlaceOrderModel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_order_view);
 
-
         status = findViewById(R.id.Status);
-        PlaceOrderModel placeModel = new PlaceOrderModel(getApplicationContext());
-        placeModel.sendOrder();
+
+        PlaceOrderModel placeOrderModel = new PlaceOrderModel(getApplicationContext() , this);
+        placeOrderModel.sendOrder();
+
     }
 
     @Override

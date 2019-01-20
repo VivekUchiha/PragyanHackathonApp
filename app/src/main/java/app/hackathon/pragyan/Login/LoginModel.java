@@ -41,8 +41,8 @@ public class LoginModel{
                             JSONObject obj = new JSONObject(response);
                             Log.e("test", "API = " + response);
                             if (obj.getInt("status_code") == 200) {
+                                writePref(String.valueOf(obj.getJSONObject("message").getInt("UserId")), obj.getJSONObject("message").getString("UserToken"));
                                 model.loginSuccess();
-                                writePref(obj.getJSONObject("message").getString("userId"), obj.getJSONObject("message").getString("UserToken"));
                             } else {
                                 toastPrinter(context, obj.getJSONObject("message").getString("Message") , 2);
                             }
@@ -82,12 +82,13 @@ public class LoginModel{
     }
 
 
-    private void writePref(String userId, String token) {
+    void writePref(String userId, String token) {
+        Log.e("hit","Reaching writePref");
         SharedPreferences preferences = context.getSharedPreferences("hack", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("userId", userId);
         editor.putString("token", token);
-        Log.d("LoginTest", "Adding " + userId + " " + token + " to shared prefs");
+        Log.e("LoginTest", "Adding " + userId + " " + token + " to shared prefs");
         editor.apply();
     }
 
