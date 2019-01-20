@@ -1,10 +1,13 @@
 package app.hackathon.pragyan.PlaceOrder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import app.hackathon.pragyan.Login.LoginView;
 import app.hackathon.pragyan.R;
+import app.hackathon.pragyan.Status.StatusView;
 
 public class PlaceOrderView extends AppCompatActivity implements PlaceOrderModel.Trigger {
     TextView status;
@@ -23,5 +26,10 @@ public class PlaceOrderView extends AppCompatActivity implements PlaceOrderModel
     @Override
     public void orderPlaced() {
         status.setText("OrderPlaced");
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this , StatusView.class);
+        startActivity(intent);
     }
 }
