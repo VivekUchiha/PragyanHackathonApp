@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Slot.SlotView"></activity>
+        <activity android:name=".PlaceOrder.PlaceOrderView"></activity>
+        <activity android:name=".Payment.PaymentView" />
+        <activity android:name=".Slot.SlotView" />
         <activity android:name=".Register.RegisterView" />
         <activity android:name=".Login.LoginView" />
         <activity android:name=".OrderView.OrderView" />
