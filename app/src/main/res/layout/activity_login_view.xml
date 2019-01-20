@@ -4,14 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="top"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/k"
+    android:padding="2dp"
     android:orientation="vertical"
     tools:context=".Login.LoginView">
 
     <TextView
-        android:id="@+id/userIdText"
         android:layout_width="match_parent"
-        android:height="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/userIdText"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="@string/user_id" />
 
@@ -19,7 +29,9 @@
         android:id="@+id/userIdEdit"
         android:height="150dp"
         android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:ems="10"
         android:hint="@string/enter_user_id"
         android:inputType="number"
@@ -27,9 +39,10 @@
 
     <TextView
         android:id="@+id/passwordText"
-        android:height="75dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
         android:text="@string/password" />
 
     <EditText
@@ -38,21 +51,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
         android:hint="@string/enter_password"
         android:inputType="textWebPassword"
         tools:ignore="Autofill" />
 
     <Button
         android:id="@+id/loginButton"
-        android:height="75dp"
-        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+
         android:text="@string/login" />
 
     <Button
         android:id="@+id/regButton"
-        android:height="75dp"
-        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
         android:text="@string/register" />
 </LinearLayout>

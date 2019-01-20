@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "264699732896",
+    "firebase_url": "https://pragyanhackathonapp.firebaseio.com",
+    "project_id": "pragyanhackathonapp",
+    "storage_bucket": "pragyanhackathonapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264699732896:android:4bc945cf692bdba2",
+        "android_client_info": {
+          "package_name": "app.hackathon.pragyan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264699732896-6ql3dkrgv7ckjquf542pbkuvund3fil8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.hackathon.pragyan",
+            "certificate_hash": "43bba945f5c912c533f24e76254762c6f1f42db6"
+          }
+        },
+        {
+          "client_id": "264699732896-ljev263gt7stss0fq4e22763obn5roe4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrleADXRD0YYvrcPgxeUjNsO2Mo1hE5Qc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264699732896-ljev263gt7stss0fq4e22763obn5roe4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

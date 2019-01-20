@@ -38,4 +38,9 @@ public class LoginView extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
