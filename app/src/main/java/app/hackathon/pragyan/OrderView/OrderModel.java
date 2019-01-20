@@ -25,7 +25,7 @@ public class OrderModel {
         Log.d("prefs",String.valueOf(prefs.getInt("3",0)));
         Log.d("prefs",String.valueOf(prefs.getInt("4",0)));
 
-
+        trigger.orderReceived();
     }
     public interface Trigger{
         void orderReceived();
