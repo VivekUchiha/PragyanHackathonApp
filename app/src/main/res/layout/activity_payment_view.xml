@@ -35,23 +35,13 @@
             android:text="Online Payment" />
 
         <RadioButton
-            android:id="@+id/radiocod"
+            android:id="@+id/radiocop"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginTop="15dp"
-            android:text="Cash" />
+            android:text="Cash"
+            android:textSize="20sp" />
 
     </RadioGroup>
-
-    <Button
-        android:id="@+id/paymentmethod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="178dp"
-        android:text="Proceed"
-        android:textSize="20sp" />
 
 </RelativeLayout>
