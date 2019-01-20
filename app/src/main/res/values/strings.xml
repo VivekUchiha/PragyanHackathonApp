@@ -13,4 +13,5 @@
     <string name="email">Email</string>
     <string name="shopId_refer_smartCard">ShopId (Refer SmartCard)</string>
     <string name="password">Password</string>
+    <string name="confirm">CONFIRM</string>
 </resources>
